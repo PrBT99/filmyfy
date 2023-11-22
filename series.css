@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Monoton&family=Poppins:wght@200;300;500;600;700&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-align: none;
+    scroll-padding-top: 2rem;
+    scroll-behavior: smooth;
+}
+:root{
+    --main-color:#ff2c1F;
+    --text-color:#ffffff;
+    --bg-color:#ffffff;
+
+}
+body{
+    background: #000000;
+    columns: var(--bg-color);
+}
+section{
+    padding: 4.5rem 0 1.5rem;
+}
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 100px;
+    transition: 0.5s;
+  
+}
+.logo{
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--bg-color);
+    display: flex;
+    align-items: center;
+    column-gap: 0.5rem;
+}
+.logo .bi{
+    font-size: 40px;
+    color: var(--main-color);
+}
+.navabar{
+    position: relative;
+    display: flex;
+    column-gap: 5rem;
+}
+.navabar li{
+    position: relative;
+}
+.navabar a{
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--bg-color);
+}
+.navabar a:hover{
+    background: linear-gradient(45deg, red, rgb(245, 14, 122));
+    color: rgb(253, 252, 252);
+}
+#menu-icon{
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 100001;
+    display: none;
+}
+.btn{
+    padding: 0.7rem 1.4rem;
+    background: var(--main-color);
+    color: var(--bg-color);
+    font-weight: 400;
+    border-radius: 0.5rem;
+}
+.btn:hover{
+    background: #fa1216;
+}
+.container{
+    width: 100%;
+    min-height: 640px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    background: rgb(2,3,7,0.4);
+}
+.container img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    z-index: -1;
+}
+.swiper-pagination-bullet{
+ width: 6px !important;
+ height: 6px !important;
+ border-radius: 0.2rem !important;
+ background-color: var(--bg-color) !important;
+ opacity: 1 !important;
+}
+.home-text{
+    color: #fff;
+    z-index: 1000;
+    padding:  150px 150px 0;
+}
+.home-text-span{
+    color: #fff;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.home-text h1{
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+
+}
+.play{
+    position: absolute;
+    right: 4rem;
+    bottom: 10%;
+}
+.play .bi {
+   background-color: var(--bg-color);
+   padding: 10px;
+   font-size: 2rem;
+   border-radius: 50%;
+   border: 4px solid rgb(2,3,7,0.4);
+   color: var(--main-color);
+}
+.play .bi:hover{
+    background: var(--main-color);
+    color: var(--bg-color);
+    transition: 0.2s all linear;
+}
+.heading{
+    max-width: 968px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 40px;
+    font-weight: 500;
+    text-transform: uppercase;
+    border-bottom: 1px solid var(--main-color);
+}
+.movies-container{
+    max-width: 968px;
+    margin-right: auto;
+    margin-left: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(180px,auto));
+    gap: 1rem;
+    margin-top: 2rem;
+}
+.box .box-img{
+    width: 100%;
+    height: 270px;
+}
+.box .box-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.box .box-img img:hover{
+    transform: translateY(-10px);
+    transition: 0.2s all linear;
+}
+.box span{
+    font-size: 13px;
+}
+.coming-container{
+    display: grid;
+    gap: 1rem;
+    max-width: 968px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+}
+.coming-container .box-img img:hover{
+    transform: translateY(0);
+}
+.coming-container .box{
+    width: 100px;
+}
+.popular-container{
+    display: grid;
+    gap: 1rem;
+    max-width: 968px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+}
+.popular-container .box-img img:hover{
+    transform: translateY(0);
+}
+.popular-container .box{
+    width: 100px;
+}
+/*==Movie-Page*/
+.movie-banner{
+    width: 90%;
+    max-width: 1400px;
+    margin: 10px auto;
+    min-height: 520px;
+    padding: 0;
+    object-fit: contain; 
+    position: relative;
+}
+.movie-banner-img{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.movie-banner-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.heading{
+    color: #ffffff;
+}
+
+.movies-container{
+    color: #ffffff;
+}
+
+.box{
+    color: #ffffff;
+}
+
+.heading{
+scroll-behavior: smooth;
+}
+
+.swiper-button-prev{
+    visibility: hidden;
+}
+
+.swiper-button-next{
+    visibility: hidden;
+}
+
+.search-container{
+    left: 50px;
+}
+
+/* Add this to your existing CSS file or create a new one */
+.search-container {
+    left: 50%;
+    transform: translateX(-50%);
+    position: relative;
+    z-index: 999;
+}

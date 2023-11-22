@@ -1,0 +1,20 @@
+[
+    {
+      "name": "Oppenheimer",
+      "imdb": 8.5,
+      "date": "2023",
+      "sposter": "img/oppenheimer.jpg",
+      "bposter": "img/oppenheimer1.webp",
+      "genre": "History",
+      "url": "oppenheimer.html"
+    },
+    {
+      "name": "The Creator",
+      "imdb": 7.0,
+      "date": "2023",
+      "sposter": "img/thecreator.jpg",
+      "bposter": "img/thecreator1.jpg",
+      "genre": "Adventure",
+      "url": "thecreator.html"
+    }
+  ]

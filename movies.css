@@ -1,0 +1,32 @@
+header a .logo_ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header a .logo_ul img {
+    width: 60px;
+}
+
+header a .logo_ul ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+
+header a .logo_ul ul li {
+    padding: 3px 15px;
+}
+
+header a .logo_ul ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+    transition: .3s linear;
+}
+
+header a .logo_ul ul li a:hover {
+    color: rgb(255, 255, 255, .7);
+}
